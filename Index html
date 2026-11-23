@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jayesh Kandoi | Web Tools for Small Teams</title>
+<meta name="description" content="I build simple web tools and dashboards for small teams and local businesses. Based in Janakpuri, New Delhi.">
+<style>
+  :root {
+    --bg: #07110e;
+    --card: #0d1c17;
+    --line: #1b3a30;
+    --text: #e8f5ef;
+    --muted: #9bb5aa;
+    --accent: #3ddc97;
+    --accent-ink: #052016;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header.nav {
+    position: sticky; top: 0; z-index: 5;
+    background: rgba(7,17,14,.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  .logo { font-weight: 700; color: var(--text); text-decoration: none; }
+  .nav a.cta {
+    background: var(--accent); color: var(--accent-ink);
+    padding: 8px 14px; border-radius: 999px; font-weight: 600; font-size: .9rem; text-decoration: none;
+  }
+  .hero { padding: 64px 0 40px; }
+  .eyebrow { color: var(--accent); font-weight: 600; letter-spacing: .08em; font-size: .8rem; text-transform: uppercase; }
+  h1 { font-size: clamp(2rem, 7vw, 3rem); line-height: 1.15; margin: 12px 0 16px; }
+  .lead { color: var(--muted); font-size: 1.1rem; max-width: 560px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .btn {
+    display: inline-block; padding: 12px 20px; border-radius: 999px;
+    font-weight: 600; text-decoration: none; border: 1px solid var(--line); color: var(--text);
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  section { padding: 40px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 1.5rem; margin: 0 0 20px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 22px; margin-bottom: 18px;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 1.2rem; }
+  .tag { display: inline-block; font-size: .75rem; color: var(--accent); border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; margin: 0 6px 6px 0; }
+  .card p { margin: 8px 0; color: var(--muted); }
+  .card p strong { color: var(--text); }
+  .card a.link { color: var(--accent); font-weight: 600; text-decoration: none; }
+  .card a.link:hover { text-decoration: underline; }
+  ul.steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  ul.steps li { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; color: var(--muted); }
+  ul.steps li strong { color: var(--text); display: block; margin-bottom: 2px; }
+  .services { display: grid; gap: 12px; padding: 0; list-style: none; margin: 0; }
+  .services li { color: var(--muted); padding-left: 22px; position: relative; }
+  .services li::before { content: ""; position: absolute; left: 0; top: .6em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  .contact { text-align: center; }
+  .contact p { color: var(--muted); max-width: 480px; margin: 0 auto 20px; }
+  footer { padding: 28px 0 40px; text-align: center; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); }
+  a:focus-visible, .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">Jayesh Kandoi</a>
+    <a class="cta" href="mailto:kandoijayesh19@gmail.com">Hire me</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+
+    <div class="hero">
+      <div class="eyebrow">Web developer &middot; Janakpuri, New Delhi</div>
+      <h1>I build simple web tools and dashboards for small teams and local businesses.</h1>
+      <p class="lead">Clear, fast and easy to use. I turn a messy everyday process into one simple page your team actually opens.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:kandoijayesh19@gmail.com">Email me</a>
+        <a class="btn" href="#work">See my work</a>
+      </div>
+    </div>
+
+    <section id="work">
+      <h2>Selected work</h2>
+
+      <div class="card">
+        <span class="tag">Team dashboard</span><span class="tag">Live updates</span><span class="tag">Excel export</span>
+        <h3>Daily Work Tracker</h3>
+        <p><strong>Problem:</strong> A small team had no single place to see who was working on what.</p>
+        <p><strong>Solution:</strong> A shared web dashboard where updates appear live for everyone. It shows task status, workload per person, a completion rate and a "help requested" flag, with one-click Excel export for reports.</p>
+        <p><strong>Built with:</strong> HTML, CSS, JavaScript and Node.</p>
+        <a class="link" href="https://work-tracker-3.onrender.com/" target="_blank" rel="noopener">View live project &rarr;</a>
+      </div>
+
+      <div class="card">
+        <span class="tag">Learning platform</span><span class="tag">Progress tracking</span><span class="tag">Gamified</span>
+        <h3>Ship It</h3>
+        <p><strong>Idea:</strong> Learn software development one small step at a time.</p>
+        <p><strong>What it does:</strong> A six-stage path from beginner to job-ready, with progress per stage, streaks, XP and custom illustrations to keep learners coming back.</p>
+        <p><strong>Built with:</strong> HTML, CSS and JavaScript.</p>
+        <a class="link" href="https://jayeshkandoi.github.io/ship-it/" target="_blank" rel="noopener">View live project &rarr;</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>What I can build for you</h2>
+      <ul class="services">
+        <li>Business websites for clinics, salons, coaching classes, restaurants and shops</li>
+        <li>Team trackers and dashboards (tasks, attendance, orders, inventory)</li>
+        <li>Simple forms, reports and Excel exports</li>
+        <li>Fixes and improvements to an existing site</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How I work</h2>
+      <ul class="steps">
+        <li><strong>1. We talk.</strong>You tell me the problem. I ask questions until it's clear.</li>
+        <li><strong>2. I show a draft.</strong>You see a working first version early and tell me what to change.</li>
+        <li><strong>3. I build and polish.</strong>I use modern tools, including AI-assisted development, to build faster, then test carefully.</li>
+        <li><strong>4. Delivery and support.</strong>I hand it over, explain how it works, and help if something breaks.</li>
+      </ul>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Let's talk</h2>
+      <p>Have a process that's messy or a site you need? Send me a short message about it and I'll reply with ideas.</p>
+      <a class="btn primary" href="mailto:kandoijayesh19@gmail.com">kandoijayesh19@gmail.com</a>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Jayesh Kandoi &middot; Janakpuri, New Delhi &middot; <a href="https://github.com/jayeshkandoi" style="color:inherit" target="_blank" rel="noopener">GitHub</a></div>
+</footer>
+
+</body>
+</html>
